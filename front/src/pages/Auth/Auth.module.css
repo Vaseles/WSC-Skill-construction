@@ -1,0 +1,6 @@
+.form {
+   @apply flex justify-center items-center  mt-36 max-w-2xl flex-col bg-gray-900 p-10 rounded-lg shadow-gray-800 shadow-lg;
+}
+.form h2 {
+   @apply m-4 text-2xl font-bold;
+}

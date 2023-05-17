@@ -1,0 +1,9 @@
+.header__left {
+   @apply flex justify-center items-center gap-4;
+}
+.header__left input {
+   @apply m-0 ;
+}
+.header__right {
+   @apply bg-gray-900 p-4;
+}

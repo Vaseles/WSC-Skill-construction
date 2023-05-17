@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  @apply m-0 p-0 box-border;
+}
+body {
+  @apply bg-black text-gray-50 font-mono overflow-x-hidden text-lg;
+
+  animation-name: plavShow;
+  animation-duration: 2s;
+}
+.link {
+  @apply text-white cursor-pointer hover:text-emerald-400 delay-150 transition-all ease-in font-bold
+}
+
+input {
+  @apply bg-transparent text-white text-xl bg-gray-800 mb-2 p-2 rounded-lg hover:bg-black transition-all delay-100 ease-linear outline-none focus:bg-black;
+}
+
+@keyframes plavShow {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 1;
+  }
+}

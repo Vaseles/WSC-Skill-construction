@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'paths' => ['api/*', 'sanctum/csrf-cookie'],
+    'paths' => ['nvafmzc-m1.wsr.ru/api/*', 'sanctum/csrf-cookie'],
 
     'allowed_methods' => ['*'],
 

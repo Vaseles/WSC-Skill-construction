@@ -1,0 +1,7 @@
+.notfound {
+   @apply flex justify-center items-center flex-col w-full h-screen ;
+}
+.notfound h1 {
+   @apply text-4xl;
+   
+}
