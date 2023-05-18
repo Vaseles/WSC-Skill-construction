@@ -7,9 +7,9 @@
 }
 body {
   @apply bg-black text-gray-50 font-mono overflow-x-hidden text-lg;
-
+  /* @apply bg-gray-200 text-gray-900; */
   animation-name: plavShow;
-  animation-duration: 2s;
+  animation-duration: 1.5s;
 }
 .link {
   @apply text-white cursor-pointer hover:text-emerald-400 delay-150 transition-all ease-in font-bold
@@ -29,4 +29,14 @@ input {
   100% {
     opacity: 1;
   }
+}
+
+::selection {
+  @apply bg-emerald-400 text-black  ;
+}
+::-webkit-scrollbar {
+  @apply bg-slate-950 w-2
+}
+::-webkit-scrollbar-thumb {
+  @apply bg-emerald-400 rounded-md
 }

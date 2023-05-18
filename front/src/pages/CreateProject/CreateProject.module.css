@@ -1,0 +1,20 @@
+.header__left {
+   @apply flex justify-center items-center gap-4;
+}
+.header__left input {
+   @apply m-0 ;
+}
+.header__right {
+   @apply bg-gray-900 p-4;
+}
+
+.create {
+   @apply grid w-full gap-2;
+   grid-template-columns: 1fr 2.8fr 1fr;
+}
+.create_elementPanel, .create_ProjectStructure {
+   @apply bg-gray-900  p-2 rounded-md ;
+}
+.create_workspace {
+   @apply bg-gray-950 rounded-md p-2;
+}

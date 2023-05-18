@@ -27,7 +27,7 @@ class ProjectController extends Controller
             'data' => [
                 'id' => $id,
                 'name' => $project->name,
-                'content' => $project->content
+                'content' => json_decode($project->content, true) 
             ]
         ],200);
        } else {
@@ -49,14 +49,14 @@ class ProjectController extends Controller
             $project = Project::create([
                 'name' => $request->name,
                 'user_id' => $user->id,
-                'content' => $request->content
+                'content' => json_encode($request->content)
             ]);
     
             return response()->json([
                 'data' => [
                     'id' => $project->id,
                     'name' => $project->name,
-                    'content' => $project->content
+                    'content' => json_decode($project->content, true) 
                 ]
             ],201);
         }
@@ -68,14 +68,14 @@ class ProjectController extends Controller
        if ($project) {
 
         $project->name = $request->name;
-        $project->content = $request->content;
+        $project->content = json_encode($request->content);
         $project->save();
 
         return response()->json([
             'data' => [
                 'id' => $id,
                 'name' => $project->name,
-                'content' => $project->content
+                'content' => json_decode($project->content, true) 
             ]
         ],200);
        } else {

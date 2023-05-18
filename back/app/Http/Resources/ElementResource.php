@@ -19,8 +19,8 @@ class ElementResource extends JsonResource
             'name' => $this->name,
             'width' => $this->width,
             'height' => $this->height,
-            'is_basis' => $this->is_bais,
-            'svg' => $this->svg
+            'is_basis' => $this->is_basis,
+            'svg' => '/images/'.$this->svg
         ];
     }
 }
