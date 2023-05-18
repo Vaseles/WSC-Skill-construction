@@ -1,20 +1,29 @@
-<svg width="128" height="254" viewBox="0 0 128 254" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M6 251H118" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M3 3H115" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M22 235L125 234.019" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M58 126L121 126" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M58 126L121 126" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M19 18L19 234" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M125 18L125 234" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M3 3L3 251" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M19 3L19 251" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M36 18L35 235" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M118 3V18" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M80 22V48" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M80 208V234" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M80 208H35" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M44 126H19" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M80 48L35 48" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M118 235V250" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M22 18H121" stroke="black" stroke-width="6" stroke-linecap="round"/>
+<svg width="254" height="128" viewBox="0 0 254 128" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="21" y="19" width="215" height="106" fill="#BDB67A"/>
+<rect x="3" y="19" width="16" height="248" transform="rotate(-90 3 19)" fill="#94BD7A"/>
+<rect x="3" y="35" width="16" height="248" transform="rotate(-90 3 35)" fill="#72915F"/>
+<rect x="21" y="125" width="89" height="215" transform="rotate(-90 21 125)" fill="#72915F"/>
+<rect x="4" y="35" width="16" height="248" transform="rotate(-90 4 35)" fill="#91B67A"/>
+<rect x="235" y="19" width="16" height="99" fill="#94BD7A"/>
+<rect x="3" y="22" width="16" height="93" fill="#94BD7A"/>
+<rect x="21" y="36" width="25" height="44" fill="#94BD7A"/>
+<rect x="209" y="36" width="25" height="44" fill="#94BD7A"/>
+<path d="M3 6L3 118" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M251 3L251 115" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M19 22L19.981 125" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M128 58L128 121" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M128 58L128 121" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M236 19L20 19" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M236 125L20 125" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M251 3L3 3" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M251 19L3 19" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M236 36L19 35" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M251 118H236" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M232 80H206" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M46 80H20" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M46 80V35" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M128 44V19" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M206 80V36" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M19 118H4" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M236 22V121" stroke="white" stroke-width="6" stroke-linecap="round"/>
 </svg>

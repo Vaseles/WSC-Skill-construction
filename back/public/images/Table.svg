@@ -1,17 +1,26 @@
 <svg width="266" height="160" viewBox="0 0 266 160" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 160L12 94" stroke="black" stroke-width="6"/>
-<path d="M27 160L27 96.5" stroke="black" stroke-width="6"/>
-<line x1="30.0031" y1="137.782" x2="238.003" y2="138" stroke="black" stroke-width="6"/>
-<line x1="29.0031" y1="125" x2="237.003" y2="125.218" stroke="black" stroke-width="6"/>
-<path d="M29 110L224 110" stroke="black" stroke-width="6"/>
-<path d="M1.5 96L265.989 96" stroke="black" stroke-width="6"/>
-<line x1="0.988679" y1="4.00002" x2="265.989" y2="3.00002" stroke="black" stroke-width="6"/>
-<line x1="5" y1="95" x2="5" stroke="black" stroke-width="6"/>
-<path d="M12 157L12 94.5" stroke="black" stroke-width="6"/>
-<path d="M12 157H30" stroke="black" stroke-width="6"/>
-<path d="M238 154H256" stroke="black" stroke-width="6"/>
-<path d="M239 157V95" stroke="black" stroke-width="6"/>
-<path d="M255 157V95.5" stroke="black" stroke-width="6"/>
-<path d="M227 124V96" stroke="black" stroke-width="6"/>
-<line x1="263" y1="99" x2="263" stroke="black" stroke-width="6"/>
+<rect x="13" y="94" width="16" height="61" fill="#943737"/>
+<rect x="239" y="97" width="16" height="58" fill="#943737"/>
+<rect x="239.738" y="124.914" width="16" height="210.601" transform="rotate(90.5207 239.738 124.914)" fill="#943737"/>
+<rect x="236.738" y="93.914" width="16" height="210.601" transform="rotate(90.5207 236.738 93.914)" fill="#722C2C"/>
+<rect x="226" y="95" width="16" height="33" fill="#722C2C"/>
+<rect x="7" y="6" width="254" height="90" fill="#943737"/>
+<path d="M12 160L12 94" stroke="white" stroke-width="6"/>
+<line x1="30.0031" y1="137.782" x2="238.003" y2="138" stroke="white" stroke-width="6"/>
+<line x1="29.0031" y1="125" x2="237.003" y2="125.218" stroke="white" stroke-width="6"/>
+<path d="M29 110L224 110" stroke="white" stroke-width="6"/>
+<rect x="26" y="94" width="16" height="29" fill="#722C2C"/>
+<path d="M27 160L27 96.5" stroke="white" stroke-width="6"/>
+<path d="M1.5 96L265.989 96" stroke="white" stroke-width="6"/>
+<line x1="0.988679" y1="4.00002" x2="265.989" y2="3.00002" stroke="white" stroke-width="6"/>
+<line x1="0.988679" y1="4.00002" x2="265.989" y2="3.00002" stroke="white" stroke-width="6"/>
+<line x1="5" y1="95" x2="5" stroke="white" stroke-width="6"/>
+<path d="M12 157L12 94.5" stroke="white" stroke-width="6"/>
+<path d="M12 157H30" stroke="white" stroke-width="6"/>
+<path d="M238 154H256" stroke="white" stroke-width="6"/>
+<path d="M239 157V95" stroke="white" stroke-width="6"/>
+<path d="M255 157V95.5" stroke="white" stroke-width="6"/>
+<path d="M227 124V96" stroke="white" stroke-width="6"/>
+<path d="M42 123V95" stroke="white" stroke-width="6"/>
+<line x1="263" y1="99" x2="263" stroke="white" stroke-width="6"/>
 </svg>

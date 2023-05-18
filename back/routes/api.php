@@ -28,6 +28,7 @@ Route::post('login', [AuthController::class, 'login']);
 
 // elements
 Route::get('', [ElementController::class, 'elements']);
+Route::get('/elements', [ElementController::class, 'elements']);
 
 Route::middleware('auth:sanctum')->group(function () {
     // projects
@@ -35,4 +36,6 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::get('projects/{id}', [ProjectController::class, 'project']);
     Route::post('projects', [ProjectController::class, 'create_project']);
     Route::patch('projects/{id}', [ProjectController::class, 'update_project']);
+
+    Route::put('/elements/{id}', [ElementController::class, 'update']);
 });

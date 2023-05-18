@@ -31,12 +31,16 @@ input {
   }
 }
 
+.btn {
+  @apply bg-amber-500 text-black text-xl border-none p-2 rounded-md  hover:bg-black hover:text-white ease-linear transition-all delay-100;
+}
+
 ::selection {
-  @apply bg-emerald-400 text-black  ;
+  @apply bg-amber-500 text-black  ;
 }
 ::-webkit-scrollbar {
   @apply bg-slate-950 w-2
 }
 ::-webkit-scrollbar-thumb {
-  @apply bg-emerald-400 rounded-md
+  @apply bg-amber-500 rounded-md
 }

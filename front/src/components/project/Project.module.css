@@ -1,0 +1,6 @@
+.project {
+   @apply flex justify-center items-center p-6 bg-gray-900 m-2 rounded delay-150 transition-all ease-linear hover:shadow-md hover:shadow-amber-500;
+}
+.project a {
+   @apply  text-2xl font-bold delay-150 transition-all ease-linear hover:text-amber-500;
+}

@@ -10,11 +10,45 @@
 
 .create {
    @apply grid w-full gap-2;
-   grid-template-columns: 1fr 2.8fr 1fr;
+   grid-template-columns: 1fr 4.5fr 1.3fr;
 }
 .create_elementPanel, .create_ProjectStructure {
    @apply bg-gray-900  p-2 rounded-md ;
 }
 .create_workspace {
-   @apply bg-gray-950 rounded-md p-2;
+   @apply bg-gray-950 rounded-md p-2 flex justify-center items-center flex-col;
+}
+
+.create_elements {
+   @apply p-2
+}
+.create__element {
+   @apply bg-gray-900  p-2 rounded-xl flex justify-center items-center flex-col relative mb-4 ease-linear delay-200 transition-all hover:shadow-md hover:shadow-amber-500 cursor-pointer;
+}
+.create__element img {
+   @apply bg-gray-900 ease-linear delay-200 transition-all
+}
+.create__element h3 {
+   @apply absolute opacity-0 ease-linear delay-200 transition-all text-amber-500 bg-gray-900 p-1 rounded-xl font-bold
+}
+.create__element:hover h3 {
+   @apply opacity-100
+}
+
+.place {
+   @apply shadow-xl shadow-gray-700 rounded-xl bg-black ease-linear delay-200 transition-all ;
+   width: 600px;
+   height: 280px;
+}
+.place__item {
+   @apply absolute z-10  flex justify-center items-center flex-col ease-linear delay-200 transition-all  cursor-pointer;
+}
+.place__item img {
+   @apply  ease-linear delay-200 transition-all
+}
+.place__item h3 {
+   @apply absolute opacity-0 ease-linear delay-200 transition-all text-amber-500 bg-black p-1 rounded-xl font-bold
+}
+.place__item:hover h3 {
+   @apply opacity-100
 }

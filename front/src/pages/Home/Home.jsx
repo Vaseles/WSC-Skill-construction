@@ -3,6 +3,7 @@ import styles from './Home.module.css'
 import Layout from '../../components/Layout/Layout'
 import Header from '../../components/Header/Header'
 import { $axios } from '../../api'
+import Project from '../../components/project/Project'
 
 const Home = () => {
   const [projects, setProjects] = useState([])
@@ -28,9 +29,7 @@ const Home = () => {
       {projects? (
         <div className={styles.projects}>
           {projects.map(project =>
-            <div key={project.id} className={styles.project}>
-              <a href="">{project.name}</a>
-            </div>
+          <Project project={project} key={project.id} />
             )}
         </div>
       ): (<></>)}

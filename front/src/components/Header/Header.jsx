@@ -18,7 +18,7 @@ const Header = () => {
   return (
     <header className={styles.header}>
       <Button onClick={logout}>Logout</Button>
-      <Button onClick={() => navigate('/create-project')} >Add A New Project</Button>
+      <a href='/create-project' className='btn' >Add A New Project</a>
     </header>
   )
 }

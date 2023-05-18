@@ -1,11 +1,20 @@
-<svg width="113" height="236" viewBox="0 0 113 236" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3 218L3 18" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M102 218L102 18" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M3 18H103" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M28 18L37 6L53 3.5L70 6L78 18" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M78 218L69 230L53 232.5L36 230L28 218" stroke="black" stroke-width="6" stroke-linecap="round"/>
-<path d="M108 77V109" stroke="black" stroke-width="10" stroke-linecap="round"/>
-<path d="M108 77V107" stroke="black" stroke-width="10" stroke-linecap="round"/>
-<path d="M108 129V159" stroke="black" stroke-width="10" stroke-linecap="round"/>
-<path d="M3 218H103" stroke="black" stroke-width="6" stroke-linecap="round"/>
+<svg width="237" height="113" viewBox="0 0 237 113" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M34 3L135 13L230 36L234 54L230 72L135 98.5L34 102V3Z" fill="#CAA524"/>
+<path d="M34 3L135 13L230 36L234 54L230 72L135 98.5L34 102V3Z" fill="#FFC700"/>
+<path d="M34 3L135 13L230 36L234 54L230 72L135 98.5L34 102V3Z" fill="#CAA524"/>
+<path d="M8 34.5L203 3V102L8 71L3.5 54L8 34.5Z" fill="#CAA524"/>
+<path d="M8 34.5L203 3V102L8 71L3.5 54L8 34.5Z" fill="#CAA524"/>
+<path d="M8 34.5L203 3V102L8 71L3.5 54L8 34.5Z" fill="#CAA524"/>
+<rect x="19" y="3" width="199" height="99" fill="#CAA524"/>
+<rect x="19" y="3" width="199" height="99" fill="#CAA524"/>
+<rect x="19" y="3" width="199" height="99" fill="#CAA524"/>
+<path d="M18.5 3L218.5 3" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M18.5 102L218.5 102" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M218.5 3L218.5 103" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M218.5 28L230.5 37L233 53L230.5 70L218.5 78" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M18.5 78L6.5 69L4 53L6.5 36L18.5 28" stroke="white" stroke-width="6" stroke-linecap="round"/>
+<path d="M159.5 108H127.5" stroke="white" stroke-width="10" stroke-linecap="round"/>
+<path d="M159.5 108H129.5" stroke="white" stroke-width="10" stroke-linecap="round"/>
+<path d="M107.5 108H77.5" stroke="white" stroke-width="10" stroke-linecap="round"/>
+<path d="M18.5 3L18.5 103" stroke="white" stroke-width="6" stroke-linecap="round"/>
 </svg>
