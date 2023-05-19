@@ -1,3 +1,6 @@
+body {
+   @apply overflow-hidden
+}
 .header__left {
    @apply flex justify-center items-center gap-4;
 }
@@ -10,13 +13,13 @@
 
 .create {
    @apply grid w-full gap-2;
-   grid-template-columns: 1fr 4.5fr 1.3fr;
+   grid-template-columns: 1fr 3fr 1fr;
 }
 .create_elementPanel, .create_ProjectStructure {
-   @apply bg-gray-900  p-2 rounded-md ;
+   @apply bg-gray-900  p-2 rounded-md;
 }
 .create_workspace {
-   @apply bg-gray-950 rounded-md p-2 flex justify-center items-center flex-col;
+   @apply bg-gray-950 rounded-md p-2 flex justify-start items-center flex-col;
 }
 
 .create_elements {
@@ -36,9 +39,10 @@
 }
 
 .place {
-   @apply shadow-xl shadow-gray-700 rounded-xl bg-black ease-linear delay-200 transition-all ;
+   @apply shadow-xl shadow-gray-700 rounded-xl bg-black ease-linear delay-200 transition-all  ;
    width: 600px;
    height: 280px;
+   box-shadow:  3px 3px 10px lightgray, -3px -3px 10px lightgray
 }
 .place__item {
    @apply absolute z-10  flex justify-center items-center flex-col ease-linear delay-200 transition-all  cursor-pointer;
@@ -47,8 +51,42 @@
    @apply  ease-linear delay-200 transition-all
 }
 .place__item h3 {
-   @apply absolute opacity-0 ease-linear delay-200 transition-all text-amber-500 bg-black p-1 rounded-xl font-bold
+   @apply absolute opacity-0 ease-linear delay-200 transition-all text-amber-500 bg-black p-1 rounded-xl font-bold 
 }
 .place__item:hover h3 {
    @apply opacity-100
 }
+.place__item:hover h3:hover {
+   @apply bg-amber-500
+}
+.place__item span {
+   @apply absolute opacity-0 top-1 right-1 ease-linear delay-200 transition-all text-amber-500 bg-black p-1 rounded-xl font-bold z-10;
+}
+.place__item:hover span {
+   @apply opacity-100 text-lg
+}
+.place__item:hover span:hover {
+   @apply bg-amber-500 text-black;
+}
+.place__item__light {
+   @apply shadow-xl
+   shadow-amber-500 ;
+} 
+
+.create h5 {
+   @apply text-xl bg-gray-700 rounded-md p-2 mb-2
+}
+
+.create_ProjectStructure__all {
+   @apply  overflow-y-auto;
+   min-height: 90vh;
+}
+.create__item {
+   @apply bg-gray-900  p-1 rounded-xl flex justify-between items-center relative mb-4 ease-linear delay-200 transition-all hover:shadow-md hover:shadow-amber-500 cursor-pointer shadow-sm shadow-gray-300  ;
+}
+.create__item h2 {
+   @apply text-xl font-bold
+}
+.create__item span  {
+   @apply bg-black hover:bg-amber-500 hover:text-black transition-all delay-200 ease-linear rounded p-1;
+ }

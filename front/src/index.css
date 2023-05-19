@@ -35,6 +35,30 @@ input {
   @apply bg-amber-500 text-black text-xl border-none p-2 rounded-md  hover:bg-black hover:text-white ease-linear transition-all delay-100;
 }
 
+.effects {
+  @apply transition-all delay-200 ease-linear ;
+  animation-name: plavShow;
+  animation-duration: 1.5s;
+}
+
+.closeEffect {
+  @apply transition-all delay-200 ease-linear ;
+  animation-name: closeAnimation;
+  animation-duration: .5s;
+}
+
+@keyframes closeAnimation {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 ::selection {
   @apply bg-amber-500 text-black  ;
 }
