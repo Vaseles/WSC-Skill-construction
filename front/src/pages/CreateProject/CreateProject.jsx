@@ -17,6 +17,7 @@ const CreateProject = () => {
   const [projectName, setProjectName] = useState('')
   const [elements, setElements] = useState([])
   const [place, setPlace] = useState([])
+  const [isZoomed, setIsZoomed] = useState(false);
 
   useEffect(() => {
     document.title = 'Create Project'
@@ -31,10 +32,13 @@ const CreateProject = () => {
     }
 
     document.addEventListener('keypress', handleKeyPress)
+    // document.addEventListener('mousemove', handleMouseMove)
 
     return () => {
       document.addEventListener('keypress', handleKeyPress)
+      // document.addEventListener('mousemove', handleMouseMove)
     }
+
   }, [])
 
   // get elements
@@ -59,7 +63,8 @@ const CreateProject = () => {
     element = ({
       'uni':  Math.floor(Math.random() * 100000000) + 1,
       'element':element,
-      'position':{x: 0, y: 0},
+      'positionX': 0,
+      'positionY': 0,
       'rotation': 0,
       'light': false,
     })
@@ -67,13 +72,13 @@ const CreateProject = () => {
     setPlace([...place, element])
   }
 
-  // delete Element
+  // delete an Element
   const deleteElement = (e, id) => {
       const updatedMassive = place.filter(item => item.uni !== id)
       setPlace(updatedMassive);
   }
 
-    // delete Element
+    // add shadow when choose an Element
     const lightElement = (e, uni) => {
      setPlace(prevState => prevState.map(obj => 
       obj.uni === uni
@@ -84,6 +89,26 @@ const CreateProject = () => {
         : obj
       ))
   }
+
+  // rotate an Element
+  const rotateElement = (e, uni) => {
+    setPlace(prevState => prevState.map(obj => 
+      obj.uni === uni
+        ? { 
+            ...obj,
+            rotation:  obj.rotation + 90
+          }
+        : obj
+      ))
+ }
+
+ const handleMouseMove = (e) => {
+  console.log(e.clientX, e.clientY)
+}
+
+//  const createNewProject = async () => {
+
+//  }
 
   return (
     <Layout>
@@ -99,7 +124,7 @@ const CreateProject = () => {
               />
         </div>
         <nav className={styles.header__right}>
-
+          <Button onClick={() => setIsZoomed(!isZoomed)}>{isZoomed? '-' : '+'}</Button>
         </nav>
       </div>
       <div className={styles.create}>
@@ -120,16 +145,27 @@ const CreateProject = () => {
 
          <div className={styles.create_workspace}>
             {place ? (
-              <div className={styles.place} onDragOver={handleDragOver} onDrop={handleDrop}>
+              <div 
+                className={styles.place} 
+                onDragOver={handleDragOver} 
+                onDrop={handleDrop}
+                onMouseMove = {handleMouseMove} 
+              >
                 {place.map(element => 
                   <div 
                     key={element.element.id} 
                     className={`${styles.place__item} ${element.light ? styles.place__item__light : '' } `} 
                     draggable 
-                    style={{width:`${element.element.width}px`, height:`${element.element.height}px`}} 
+                    style={{
+                      width:`${element.element.width}px`, 
+                      height:`${element.element.height}px`, 
+                      transform: `rotate(${element.rotation}deg)`,
+                      left: `${element.positionX}px`, 
+                      top: `${element.positionY}px`,
+                    }} 
                   >
                     <h3 draggable={false}>
-                    <svg width="30" height="30" viewBox="0 0 62 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg onClick={(e) => rotateElement(e, element.uni)} width="30" height="30" viewBox="0 0 62 65" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M8.5 62.5L6.03916 62.9407L6.40798 65H8.5V62.5ZM58 62.5V65H61.2251L60.4211 61.8768L58 62.5ZM45 12L47.4211 11.3768L46.8542 9.17481L44.6085 9.53084L45 12ZM4 18.5L30.9517 28.8412L26.4316 0.329756L4 18.5ZM0.0391584 29.4407L6.03916 62.9407L10.9608 62.0593L4.96084 28.5593L0.0391584 29.4407ZM8.5 65H58V60H8.5V65ZM60.4211 61.8768L47.4211 11.3768L42.5789 12.6232L55.5789 63.1232L60.4211 61.8768ZM44.6085 9.53084L25.831 12.5078L26.6139 17.4461L45.3915 14.4692L44.6085 9.53084Z" fill="white"/>
                       </svg>
                     </h3>

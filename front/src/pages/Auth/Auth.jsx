@@ -24,10 +24,10 @@ const Auth = () => {
     document.title = 'Login Page'
   }, [])
 
-  // 
+  //  AUTH
   const auth = async (e) => {
     e.preventDefault()
-    console.log(data)
+
     await $axios.post('/login', {
       'login': data.login,
       'pin': data.pin
@@ -54,18 +54,14 @@ const Auth = () => {
         <input 
           type="text" 
           placeholder="enter your login..." 
-          name="login"
           value={data.login}
           onChange = {e => setData({...data, login: e.target.value})}
-          required
           />
         <input 
           type="password" 
           placeholder="enter your pin..." 
-          name="pin"
           value={data.pin}
           onChange = {e => setData({...data, pin: e.target.value})}
-          required
           />
           <Button
             onClick = {auth}>Continue</Button>

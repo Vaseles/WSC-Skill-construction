@@ -39,7 +39,7 @@ body {
 }
 
 .place {
-   @apply shadow-xl shadow-gray-700 rounded-xl bg-black ease-linear delay-200 transition-all  ;
+   @apply shadow-xl shadow-gray-700 rounded-xl bg-black ease-linear delay-200 transition-all overflow-x-auto relative  ;
    width: 600px;
    height: 280px;
    box-shadow:  3px 3px 10px lightgray, -3px -3px 10px lightgray
