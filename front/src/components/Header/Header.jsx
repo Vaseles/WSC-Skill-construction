@@ -11,14 +11,14 @@ const Header = () => {
       localStorage.removeItem('Quackity')
       setIsAuth(false)
 
-      navigate('/login')
+      navigate('/xxx-m1.wsr.ru/login')
       window.location.reload()
    } 
 
   return (
     <header className={styles.header}>
       <Button onClick={logout}>Logout</Button>
-      <a href='/create-project' className='btn' >Add A New Project</a>
+      <a href='/xxx-m1.wsr.ru/create-project' className='btn' >Add A New Project</a>
     </header>
   )
 }

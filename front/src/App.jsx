@@ -13,16 +13,16 @@ const App = () => {
   return (
     <>
       <Routes>
-        <Route path='/login' element={<Auth/>} />
+        <Route path='/xxx-m1.wsr.ru/login' element={<Auth/>} />
 
         <Route path='*' element={<PageNotFound/>} />
 
         {isAuth ? (
           <>
-          <Route path='/' element={<Home/>} />
-          <Route path='/create-project' element={<CreateProject/>} />
+          <Route path='xxx-m1.wsr.ru/' element={<Home/>} />
+          <Route path='/xxx-m1.wsr.ru/create-project' element={<CreateProject/>} />
           </>
-        ): (navigate('/'))}
+        ): (navigate('/xxx-m1.wsr.ru/login'))}
       </Routes>
     </>
   )

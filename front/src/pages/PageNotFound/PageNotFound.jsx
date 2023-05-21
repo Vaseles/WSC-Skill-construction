@@ -7,7 +7,7 @@ const PageNotFound = () => {
     <Layout>
       <div className={styles.notfound}>
         <h1>Page Not Found</h1>
-        <p>Go To <a className='link' href='/login'>Login</a></p>
+        <p>Go To <a className='link' href='/xxx-m1.wsr.ru/login'>Login</a></p>
       </div>
     </Layout>
   )

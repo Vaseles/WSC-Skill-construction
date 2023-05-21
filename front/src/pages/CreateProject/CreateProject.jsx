@@ -8,16 +8,16 @@ import { useNavigate } from 'react-router-dom'
 
 import Button from '../../components/ui/Button/Button'
 import { $axios } from '../../api'
-import axios from 'axios'
 
 
 const CreateProject = () => {
   const navigate = useNavigate()
 
-  const [projectName, setProjectName] = useState('')
+  const [projectName, setProjectName] = useState(localStorage.getItem('projectName'))
   const [elements, setElements] = useState([])
   const [place, setPlace] = useState([])
   const [isZoomed, setIsZoomed] = useState(false);
+  const [metters, setMetters] = useState(0)
 
   useEffect(() => {
     document.title = 'Create Project'
@@ -69,6 +69,12 @@ const CreateProject = () => {
       'light': false,
     })
 
+
+    let currentWidth = element.element.width
+    let currentHeight = element.element.height
+    
+    setMetters(currentWidth * currentHeight / 10000)
+
     setPlace([...place, element])
   }
 
@@ -102,29 +108,38 @@ const CreateProject = () => {
       ))
  }
 
- const handleMouseMove = (e) => {
-  console.log(e.clientX, e.clientY)
+ const handleMouseMove =  (e) => {
 }
 
-//  const createNewProject = async () => {
+ const createNewProject = async (e) => {
+  e.preventDefault()
 
-//  }
+  await $axios.post('projects', {
+    name: projectName, 
+    content: JSON.stringify(place)
+  }).then(res =>  {
+    console.log(res)
+    navigate('/xxx-m1.wsr.ru/')
+  })
+    .catch(err => console.error(err))
+ }
 
   return (
     <Layout>
         <div className={style.header}>
         <div className={styles.header__left}>
-          <a href="/" className='btn' >Go Back</a>
+          <a href="/xxx-m1.wsr.ru/" className='btn' >Go Back</a>
           <input 
               type='text'
               value = {projectName}
-              onChange = {(e) => setProjectName(e.target.value)}
+              onChange = {(e) => {setProjectName(e.target.value); localStorage.setItem('projectName', e.target.value);}}
               placeholder='Enter project name'
               required
               />
         </div>
         <nav className={styles.header__right}>
           <Button onClick={() => setIsZoomed(!isZoomed)}>{isZoomed? '-' : '+'}</Button>
+          <Button onClick={createNewProject}>Create</Button>
         </nav>
       </div>
       <div className={styles.create}>
@@ -175,6 +190,10 @@ const CreateProject = () => {
                 )}
               </div>
             ): (<h2>Elements Not Found(How George)</h2>)}
+
+            <div className={styles.line__with__info}>
+              Project Info: S = {metters} metters 
+            </div>
          </div>
          <div className={styles.create_ProjectStructure}>
           {place? (

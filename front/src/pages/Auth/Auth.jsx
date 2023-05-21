@@ -37,7 +37,7 @@ const Auth = () => {
       localStorage.setItem('Quackity', res.data.data.token)
       setIsAuth(true)
 
-      navigate('/')
+      navigate('/xxx-m1.wsr.ru/')
       window.location.reload()
 
     }).catch(err => {
